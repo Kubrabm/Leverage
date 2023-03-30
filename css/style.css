@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: rgb(202, 202, 202);
+    opacity: .3;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+header{
+    background-color: black;
+    padding: 15px 0;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+}
+.logo span{
+    color: red;
+    font-size: 12px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .navbar1{
+    font-weight: bold;
+    margin-left: 3.5rem;
+}
+nav i{
+    color: #fff;
+    cursor: pointer;
+}
+.icons{
+    margin-left: 1.5rem;
+}
+.iconmob{
+    display: none;
+}
+.bars{
+    display: none;
+}
+nav .navbar1:hover{
+    background: linear-gradient(to right, #CF0000 0%, #CF117C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+nav i:hover{
+    background: linear-gradient(to right, #CF0000 0%, #CF117C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav .contactus{
+    margin-left: 8px;
+    padding: 8px 32px;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #CF0000 0%, #CF117C 100%) 1;
+    margin-left: 3rem;
+    transition: .4s;
+    color: #fff;
+}
+.contactus:hover{
+    background: linear-gradient(to right, #CF0000 0%, #CF117C 100%);
+}
+#first{
+    background-color: black;
+    border-bottom: 1px dotted #b9b8b8;
+    position: relative;
+}
+#first::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    width: 5%;
+    height: 5px;
+    background: linear-gradient(to right, #CF0000 0%, #CF117C 100%);
+    transform: rotate(90deg);
+    z-index: 1;
+}
+
+.page{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+.left-text{
+    padding-top: 4rem;
+}
+.left-text h2{
+    background: linear-gradient(to right, #CF0000 0%, #CF117C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6rem;
+    font-weight: bolder;
+}
+.left-text p{
+    color: rgb(220, 221, 221);
+    width: 70%;
+    font-size: 20px;
+    margin-bottom: 3rem;
+}
+.left-text a{
+    border: 1px solid;
+    border-image: linear-gradient(to right, #CF0000 0%, #CF117C 100%) 1;
+    padding: 10px 25px;
+}
+.left-text a:hover{
+    background: linear-gradient(to right, #CF0000 0%, #CF117C 100%);
+}
+.right-side img{
+    width: 100%;
+    padding-top: 2rem;
+}
+#second{
+    background-color: black;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    border-bottom: 1px dotted #b9b8b8;
+    position: relative;
+}
+#second::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    width: 5%;
+    height: 5px;
+    background: #CF0000;
+    background: linear-gradient(to right, #CF0000 0%, #CF117C 100%);
+    transform: rotate(90deg);
+}
+.box{
+    text-align: center;
+    padding: 35px;
+    color: #d8d6d6;
+}
+.box i{
+    font-size: 35px;
+    background: #CF0000;
+    background: linear-gradient(to right, #CF0000 0%, #CF117C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 25px;
+}
+.box h2{
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.box p{
+    color: rgb(156, 156, 156);
+    font-size: 18px;
+}
+#third{
+    background-color: black;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.third-text{
+    text-align: center;
+}
+.third-text h2{
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+.third-text p{
+    font-size: 20px;
+    color: #9e9d9d;
+    margin-bottom: 3rem;
+}
+.box1 img{
+    width: 100%;
+    cursor: pointer;
+}
+.box1 p{
+    color: #9e9d9d;
+}
+.box1{
+    text-align: center;
+    color: #e7e7e7;
+    background-color: #1f1e1e;
+    padding: 2.5rem;
+    border-radius: 2px;
+    transition: .5s;
+    position: relative;
+}
+.box1::before{
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: calc(50% + 10px);
+    height: calc(50% + 10px);
+    border: none;       
+}
+.box1:hover{
+    background: #CF0000;
+    background: linear-gradient(to right, #CF0000 0%, #CF117C 100%);
+    transform: translateY(-7.5px);
+}
+.box1 h4{
+    margin-bottom: 25px;
+}
+@media(max-width:576px){
+    header nav a{
+        display: none;
+    }
+    .bars{
+        display: inline;
+    }
+    .page{
+        background-image: url(https://leverage-html.codings.dev/assets/images/hero-8.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: .7;
+        z-index: -1;
+        height: 710px;
+    }
+    .fa-instagram{
+        display: none;
+    }
+    .fa-twitter{
+        display: none;
+    }
+    nav .msgmob{
+        border: 1px solid red;
+        padding: 7px 12px;
+        display: inline;
+        opacity: .9;
+    }
+    .iconmob{
+        font-size: 20px;
+        margin-left: 25px;
+    }
+    .left-text{
+        z-index: 1;
+        text-align: center;
+    }
+    .left-text h2{
+        font-size: 60px;
+        text-align: center;
+    }
+    .left-text p{
+        text-align: center;
+        width: 100%;
+        font-size: 22px;
+
+    }
+    .left-text a{
+        text-align: center;
+        width: 100%;
+        background-color: black;
+    }
+    .right-side{
+        display: none;
+    }
+    .gp{
+        gap: 10px;
+    }
+
+}
+@media (min-width: 576px) and (max-width: 1205px){
+    header nav a{
+        display: none;
+    }
+    .bars{
+        display: inline;
+    }
+    .page{
+        background-image: url(https://leverage-html.codings.dev/assets/images/hero-8.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: .9;
+        z-index: -1;
+        height: 910px;
+    }
+    .right-side{
+        display: none;
+    }
+    .fa-instagram{
+        display: none;
+    }
+    .fa-twitter{
+        display: none;
+    }
+    .left-text{
+        z-index: 1;
+    }
+    .left-text h2{
+        font-size: 60px;
+        width: 60%;
+
+    }
+    .iconmob{
+        font-size: 20px;
+        margin-left: 25px;
+    }
+    .left-text p{
+        width: 60%;
+        font-size: 22px;
+    }
+    .left-text a{
+        text-align: center;
+        width: 100%;
+        background-color: black;
+    }
+    .contactus{
+        display: inline;
+        opacity: .9;
+    }
+    .box1{
+        margin-bottom: 10px;
+    }
+}
